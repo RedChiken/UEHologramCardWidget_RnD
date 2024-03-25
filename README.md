@@ -32,11 +32,15 @@
 * CardImageWidget 안의 Image들의 위치가 보정(Adjust) 될 때 그 비례값을 해당 CardLayerData::Depth / DistanceWithScreen으로 결정된다.
 * 즉, 해당 이미지가 좌표 변화에 대해 더 민감하게 반응하게 하려면 Depth를 키워줘야 한다.
 
-[작업 qkd식]
-1. CardImageWidget에 필요한 ImageWidget을 추가하고 변수로 지정합니다.
+[작업 방식]
+1. CardImageWidget에 필요한 ImageWidget을 Panel_Screen 하위에 추가하고 변수로 지정합니다.
+   * ![image](https://github.com/RedChiken/UEHologramCardWidget_RnD/assets/7973257/922f22a3-5217-4dd8-9ce7-efc17442ab4b)
 2. CardImageWidget에 추가한 ImageWidget들과 같은 이름을 모두 CardLayerWidgetName에 추가합니다.
+   * ![image](https://github.com/RedChiken/UEHologramCardWidget_RnD/assets/7973257/2ccf0e6a-f040-4338-afc6-63f4bc9826fe)
 3. CardLayerData를 Row로 갖는 DataTable을 만들고 값을 입력하여 테이블을 완성합니다.
+   * ![image](https://github.com/RedChiken/UEHologramCardWidget_RnD/assets/7973257/13f45b93-e24d-49e3-8d75-93c18d84e7cd)
 4. 3에서 생성한 테이블을 PresentationWidget의 ImageLayerData 변수에 지정하고 에디터에서 게임을 실행합니다.
+   * ![image](https://github.com/RedChiken/UEHologramCardWidget_RnD/assets/7973257/27222b43-7df8-43d5-b9ed-4eb7714de563)
 
 [주의사항]
 * 에디터에서 실행 하고 ViewPort를 전체화면(F11) 할 시 전체화면 크기가 잘못 잡혀서 시각적으로 맞지 않게 나옵니다.
